@@ -1,0 +1,40 @@
+.selected {
+  @include body3;
+  display: flex;
+  padding: 0.8rem 1.8rem;
+  align-items: center;
+  min-width: 9.3rem;
+  height: 4.5rem;
+  position: fixed;
+  bottom: 11rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: $gray-a-30;
+  border-radius: 100px;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  width: 6rem;
+  height: 6rem;
+  padding: 0.8rem;
+  background-color: $gray-a-30;
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  &:active:not(:disabled) {
+    background-color: $gray-a-20;
+  }
+
+  &:disabled {
+    background-color: $gray-500;
+    cursor: not-allowed;
+  }
+}

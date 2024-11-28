@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.7rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+}
+
+.iconWrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  height: 3.2rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 100px;
+  border: 1px solid $white;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.label {
+  @include button3;
+  color: $white;
+}

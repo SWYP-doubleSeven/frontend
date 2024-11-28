@@ -1,0 +1,30 @@
+.container {
+  margin-top: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  & > :focus {
+    border: 0.15rem solid $orange-400;
+  }
+}
+
+.iconWrapper {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  background-color: $gray-a-20;
+  border: 0.15rem solid $gray-a-20;
+}
+
+.label {
+  @include button3;
+  color: $white;
+}

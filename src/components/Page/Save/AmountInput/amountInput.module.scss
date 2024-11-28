@@ -1,0 +1,11 @@
+.inputStyle {
+  @include h6;
+  text-align: right;
+  color: $gray-200;
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+}
+
+.inputStyle.focused {
+  color: $white;
+}

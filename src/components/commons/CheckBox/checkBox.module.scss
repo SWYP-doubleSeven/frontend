@@ -1,0 +1,14 @@
+.checkboxWrap {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+  }
+}

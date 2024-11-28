@@ -1,0 +1,71 @@
+.modalWrap {
+  width: 100%;
+  max-width: 60rem;
+  height: 100vh;
+  background-color: rgba($color: $gray-900, $alpha: 0.7);
+  filter: blur(10);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  width: 32.7rem;
+  padding: 3rem 3rem 2.4rem 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0.8rem;
+  border: 1px solid $gray-600;
+  background: $gray-800;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+
+  /* body2 */
+  font-family: LeeSeoyun;
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+
+.btnBox {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.back,
+.confirm {
+  display: flex;
+  padding: 1rem 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  width: 10.2rem;
+  flex: 1 0 0;
+
+  color: #fff;
+  text-align: center;
+
+  font-family: LeeSeoyun;
+  font-size: 1.6rem;
+}
+
+.confirm {
+  border-radius: 0.8rem;
+  background: $orange-400;
+}
+
+.back {
+  border-radius: 0.8rem;
+  border: 1px solid #fff;
+}

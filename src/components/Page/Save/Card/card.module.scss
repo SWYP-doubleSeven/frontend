@@ -1,0 +1,70 @@
+.cardWrap {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.cardWrap2 {
+  display: flex;
+  width: 100%;
+}
+
+.cardWrap3 {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-right: 2rem;
+}
+
+.timeWrap {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.time {
+  @include body4;
+  display: block;
+  width: 8.1rem;
+  color: $orange-200;
+}
+
+.textWrap {
+  .category,
+  .money {
+    @include body4;
+  }
+}
+
+.categoryIcon {
+  padding: 0.6rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  border: 1px solid $white;
+  border-radius: 100px;
+  margin-top: 0.5rem;
+}
+
+.editWrap {
+  // position: absolute;
+  display: flex;
+  // right: -13rem;
+}
+
+.cardEdit,
+.cardDelete {
+  @include body4;
+  width: 5.2rem;
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cardEdit {
+  background-color: $gray-500;
+}
+
+.cardDelete {
+  background-color: $red-400;
+}

@@ -1,0 +1,95 @@
+.container {
+  @include body5;
+  width: 100%;
+  padding: 0 2.4rem;
+  color: $white;
+  margin-top: 3.2rem;
+}
+
+.calendar {
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+  z-index: 100;
+  top: 0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  button {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  p {
+    @include h6;
+    min-width: 4.2rem;
+    color: $orange-400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.weekdays {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.2rem;
+
+  .weekday {
+    flex: 1;
+    text-align: center;
+    color: $gray-300;
+  }
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.6rem 6rem 1.6rem;
+    min-height: 7.4rem;
+    cursor: pointer;
+
+    &.current {
+      color: $white;
+
+      &.sunday {
+        color: $red-300;
+      }
+
+      &.saturday {
+        color: $blue-300;
+      }
+    }
+
+    &.other {
+      color: $gray-700;
+
+      &.sunday {
+        color: rgba($red-300, 0.4);
+      }
+
+      &.saturday {
+        color: rgba($blue-300, 0.4);
+      }
+    }
+  }
+}

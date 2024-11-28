@@ -1,6 +1,26 @@
-.page {
-  background-color: blue;
-  @include respondTo(small) {
-    background-color: red;
-  }
+.mainWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4.4rem;
+  justify-content: center;
+}
+
+.title {
+  color: $orange-400;
+  text-align: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.subTitle {
+  color: $white;
+  text-align: center;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

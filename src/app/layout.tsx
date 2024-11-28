@@ -1,7 +1,12 @@
 "use client";
+import "@/styles/base/index.scss";
+import Script from "next/script";
+
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { useState } from "react";
+
+import Gnb from "@/components/commons/Gnb";
 
 export default function RootLayout({
   children,
@@ -13,9 +18,29 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://cdn.swygbro.com/public/widget/swyg-widget.js"
+          strategy="beforeInteractive"
+          defer
+        />
+      </head>
       <body>
         <QueryClientProvider client={queryClient}>
-          {children}
+          <div
+            style={{
+              width: "100%",
+              maxWidth: "60rem",
+              height: "100vh",
+              backgroundColor: "black",
+              margin: "0 auto",
+              overflow: "hidden",
+            }}
+          >
+            <Gnb />
+            {children}
+          </div>
+          <div id="portal-root"></div>
           <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>
       </body>

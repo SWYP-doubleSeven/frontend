@@ -1,0 +1,141 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.7/static/pretendard-dynamic-subset.css");
+
+@font-face {
+  font-family: "UhBeeSe_hyun";
+  src: url("https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LeeSeoyun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-main: "UhBeeSe_hyun", sans-serif;
+
+@mixin heading($size, $weight: 700) {
+  font-family: "UhBeeSe_hyun";
+  font-size: $size + px;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: normal;
+}
+
+@mixin h1 {
+  @include heading(80);
+}
+
+@mixin h2 {
+  @include heading(54);
+}
+
+@mixin h3 {
+  @include heading(40);
+}
+
+@mixin h4 {
+  @include heading(32);
+}
+
+@mixin h5 {
+  @include heading(24);
+}
+
+@mixin h6 {
+  @include heading(20);
+}
+
+@mixin subtitle1 {
+  @include heading(18, 400);
+}
+
+@mixin subtitle2 {
+  @include heading(14, 400);
+}
+
+@mixin body($size, $height: 140%) {
+  font-family: "LeeSeoyun";
+  font-size: $size + px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: $height;
+}
+
+@mixin body1 {
+  @include body(24);
+}
+
+@mixin body2 {
+  @include body(20);
+}
+
+@mixin body3 {
+  @include body(18, 160%);
+}
+
+@mixin body4 {
+  @include body(16);
+}
+
+@mixin body5 {
+  @include body(14, normal);
+  letter-spacing: -0.35px;
+}
+
+@mixin button($size) {
+  font-family: "LeeSeoyun";
+  font-size: $size + px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin button1 {
+  @include button(18);
+}
+
+@mixin button2 {
+  @include button(16);
+}
+
+@mixin button3 {
+  @include button(12);
+}
+
+@mixin caption {
+  font-family: "LeeSeoyun";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+@mixin manager($size, $weight: 400, $spacing: -0.28) {
+  font-family: "Roboto";
+  font-size: $size + px;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: normal;
+  letter-spacing: $spacing + px;
+}
+
+@mixin managerBody {
+  @include manager(14);
+}
+
+@mixin managerBodyBold {
+  @include manager(14, 700);
+}
+
+@mixin managerCaption {
+  @include manager(12, 400, -0.24);
+}
+
+@mixin managerSubtitle {
+  @include manager(15, 400, -0.3);
+}

@@ -1,0 +1,133 @@
+.modalBack {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  width: 100%;
+  max-width: 60rem;
+  height: 100vh;
+}
+
+.modalWrap {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  max-width: 60rem;
+  height: 70vh;
+  min-height: 47rem;
+  background-color: $gray-800;
+  border-radius: 3.2rem 3.2rem 0 0;
+  padding: 0.8rem 2.4rem;
+  animation: slideUp 0.5s ease-out;
+  z-index: 200;
+
+  &.closing {
+    animation: slideDown 0.3s ease-in forwards;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(-50%, 100%);
+  }
+}
+
+.bar {
+  width: 4.4rem;
+  height: 0.5rem;
+  background-color: $gray-700;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.time {
+  @include body3;
+  text-align: center;
+  margin-top: 1.9rem;
+}
+
+.content {
+  @include h6;
+  position: relative;
+  color: $gray-200;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rem;
+
+  &.editing {
+    margin-top: 3rem;
+  }
+}
+
+.categoryText {
+  display: flex;
+  align-items: center;
+}
+
+.categoryMoney {
+  display: block;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+
+.underline.focused {
+  color: $white;
+}
+
+.categorySelector {
+  display: none;
+
+  &.hidden {
+    display: block;
+  }
+}
+
+.button {
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 10.8rem);
+  max-width: 55.2rem;
+  z-index: 300;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out 0.1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

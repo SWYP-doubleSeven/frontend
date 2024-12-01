@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 
 import Button from "@/components/commons/Button";
-import { categoryNameMap } from "@/constants/category";
+import { categoryActionMap, categoryNameMap } from "@/constants/category";
 
 import AmountInput from "../AmountInput";
 import CategorySelector from "../CategorySelector";
@@ -76,7 +76,7 @@ export default function EditModal({
               >
                 {categoryNameMap[category]}
               </span>
-              먹었다치고
+              {categoryActionMap[category]}
             </p>
           </div>
           <div className={cn("categoryMoney", { hidden: isEditingCategory })}>

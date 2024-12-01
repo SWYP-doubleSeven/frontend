@@ -17,12 +17,12 @@ import { listEditState } from "@/lib/atoms/list";
 
 import EditModal from "../EditModal";
 
-
 interface ListCardProps {
   category: string;
+  className?: string;
 }
 
-export default function Card({ category }: ListCardProps) {
+export default function Card({ category, className }: ListCardProps) {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isEdit] = useAtom(listEditState);
 
@@ -31,7 +31,7 @@ export default function Card({ category }: ListCardProps) {
   };
 
   return (
-    <div>
+    <div className={className}>
       <div className={cn("cardWrap")}>
         <div className={cn("cardWrap2")}>
           <div className={cn("timeWrap")}>

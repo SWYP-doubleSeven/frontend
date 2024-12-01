@@ -16,7 +16,7 @@ export default function Listview() {
         <span>0000원</span>
       </div>
       <div className={cn("date")}>날짜</div>
-      <Card category={"dessert"} />
+      <Card category={"coffee"} />
     </div>
     // <div className={cn("empty")}>
     //   <Image

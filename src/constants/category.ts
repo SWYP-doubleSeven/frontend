@@ -33,3 +33,21 @@ export const categoryNameMap: { [key: string]: string } = {
   fandom: "덕질",
   travel: "여행",
 };
+
+export const categoryActionMap: { [key: string]: string } = {
+  coffee: "마셨다치고",
+  dessert: "먹었다치고",
+  meal: "먹었다치고",
+  alcohol: "마셨다치고",
+  smoke: "폈다치고",
+  drink: "마셨다치고",
+  chicken: "먹었다치고",
+  taxi: "탔다치고",
+  game: "했다치고",
+  shopping: "했다치고",
+  movie: "봤다치고",
+  cosmetic: "샀다치고",
+  hair: "했다치고",
+  fandom: "했다치고",
+  travel: "갔다치고",
+};

@@ -57,17 +57,33 @@
   transform: translate(-50%, 0);
 }
 
+.back {
+  position: fixed;
+  left: 2.4rem;
+  cursor: pointer;
+}
+
+.timeWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  margin-top: 2rem;
+}
+
 .time {
   @include body3;
-  text-align: center;
-  margin-top: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
 }
 
 .plus {
   @include button2;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
 }
 
@@ -78,7 +94,7 @@
   transform: translateX(-50%);
   width: calc(100% - 10.8rem);
   max-width: 55.2rem;
-  z-index: 300;
+  z-index: 10;
   opacity: 0;
   animation: fadeIn 0.3s ease-out 0.1s forwards;
 }
@@ -89,5 +105,92 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 15rem);
+  gap: 0.4rem;
+}
+
+.emptyState {
+  @include body3;
+  color: $white;
+}
+
+.content {
+  @include h6;
+  position: relative;
+  color: $gray-200;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rem;
+
+  &.editing {
+    margin-top: 3rem;
+  }
+}
+
+.categoryText {
+  display: flex;
+  align-items: center;
+}
+
+.categoryMoney {
+  display: block;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+
+.underline.focused {
+  color: $white;
+}
+
+.categorySelector {
+  display: none;
+
+  &.hidden {
+    display: block;
+  }
+}
+
+.total {
+  @include body3;
+  display: flex;
+  justify-content: space-between;
+  margin: 2.4rem 0 1.4rem 0;
+}
+
+.cardWrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+}
+
+.card {
+  padding: 1.2rem 0 1.4rem 0;
+  border-top: 1px solid $gray-700;
+
+  &:last-child {
+    border-bottom: none;
   }
 }

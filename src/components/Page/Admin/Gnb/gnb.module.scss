@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.9rem 11.1rem 0 11.1rem;
+  font-size: 1.7rem;
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}

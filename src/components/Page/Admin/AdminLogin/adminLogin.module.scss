@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 4.7rem;
+}
+
+.notice {
+  font-size: 1.6rem;
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.labelWrap {
+  display: flex;
+  align-items: center;
+}
+
+.headerWrap {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 12px;
+  width: 6rem;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.loginButton {
+  background-color: #404040;
+  color: #fff;
+  width: 12.4rem;
+  height: 8.5rem;
+  border: none;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.backButton {
+background-color: #d9d9d9;
+width: 9rem;
+height: 5rem;
+font-size: 1.6rem;
+}
+
+.buttonWrap {
+  position: relative;
+}
+
+.error {
+  color: $red-400;
+  position: absolute;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+}
+
+.errorMessage {
+  color: $red-400;
+  position: absolute;
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+}

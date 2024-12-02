@@ -34,6 +34,24 @@ export const categoryNameMap: { [key: string]: string } = {
   travel: "여행",
 };
 
+export const categoryNameReverseMap: { [key: string]: string } = {
+  coffee: "커피",
+  dessert: "디저트",
+  meal: "밥",
+  alcohol: "술",
+  smoke: "담배",
+  drink: "음료",
+  chicken: "야식",
+  taxi: "차비",
+  game: "취미",
+  shopping: "쇼핑",
+  movie: "영화",
+  cosmetic: "화장품",
+  hair: "미용",
+  fandom: "덕질",
+  travel: "여행",
+};
+
 export const categoryActionMap: { [key: string]: string } = {
   coffee: "마셨다치고",
   dessert: "먹었다치고",
@@ -50,4 +68,22 @@ export const categoryActionMap: { [key: string]: string } = {
   hair: "했다치고",
   fandom: "했다치고",
   travel: "갔다치고",
+};
+
+export const categoryColorMap: { [key: string]: string } = {
+  coffee: "#ffd09b",
+  dessert: "#fff7d1",
+  meal: "#ffe5e5",
+  alcohol: "#ffb0b0",
+  smoke: "#ff8c8c",
+  drink: "#ffad84",
+  chicken: "#fdffae",
+  taxi: "#dee5d4",
+  game: "#bacd92",
+  shopping: "#75a47f",
+  movie: "#b6ffa1",
+  cosmetic: "#d4fafc",
+  hair: "#d2e0fb",
+  fandom: "#8eaccd",
+  travel: "#3a98b0",
 };

@@ -1,0 +1,37 @@
+.container {
+  margin: 0 2.4rem;
+}
+
+.total {
+  @include subtitle2;
+  border: 1px solid $white;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.8rem;
+  margin-top: 2.4rem;
+}
+
+.barWrap {
+  padding: 2rem 2.4rem;
+  background-color: $gray-a-20;
+  border-radius: 0.8rem;
+}
+
+.timeWrap {
+  padding: 2rem 2.4rem;
+  background-color: $gray-a-20;
+  border-radius: 0.8rem;
+}
+
+.title {
+  @include subtitle2;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.chartWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 2.4rem 0 3rem 0;
+}

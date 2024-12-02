@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.item {
+  @include body5;
+  background-color: $gray-a-20;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorWrap{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem
+}
+
+.color {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+

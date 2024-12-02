@@ -1,0 +1,15 @@
+export const data = [
+  { hour: 0, amount: 2000, count: 1 },
+  { hour: 2, amount: 0, count: 0 },
+  { hour: 4, amount: 500, count: 1 },
+  { hour: 6, amount: 500, count: 1 },
+  { hour: 8, amount: 11500, count: 1 },
+  { hour: 10, amount: 500, count: 1 },
+  { hour: 12, amount: 500, count: 1 },
+  { hour: 14, amount: 25000, count: 5 },
+  { hour: 16, amount: 35000, count: 2 },
+  { hour: 18, amount: 0, count: 0 },
+  { hour: 20, amount: 50000, count: 3 },
+  { hour: 22, amount: 35000, count: 1 },
+  { hour: 24, amount: 0, count: 0 },
+];

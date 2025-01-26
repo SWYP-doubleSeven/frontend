@@ -39,7 +39,7 @@
 ![Axios](https://img.shields.io/badge/Axios-5429e4.svg?&logo=Axios&logoColor=white&style=for-the-badge)
 ![Tanstack-Query](https://img.shields.io/badge/tanstack_query-FF4154.svg?style=for-the-badge&logo=reactquery&logoColor=white)
 ![React-Hook-Form](https://img.shields.io/badge/react_hook_form-EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
-![React](https://img.shields.io/badge/zustand-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React](https://img.shields.io/badge/jotai-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ![PWA](https://img.shields.io/badge/PWA-5A0FC8.svg?style=for-the-badge&logo=pwa&logoColor=white)
 
